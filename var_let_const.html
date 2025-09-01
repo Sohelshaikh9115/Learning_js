@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable in HTML</title>
+  </head>
+  <body>
+    <script>
+      // all the three are used to declare a variable in javascript
+      var fname = "Sohel";
+      var fname = "Shaikh"; // we can change the value of var variable like Redeclaration
+      fname = "reassigned value";
+      document.write(fname);
+
+      // in let we  can only  reassign the value we cant redeclaire it again
+      let lname = "Shaikh";
+      // let lname = "Sohel";       // we can not change the value of let variable       Not Allowed
+      lname = "reassigned value"; // we can reassign the value of let variable            Allowed
+
+      const pi = 3.14;
+      // const pi = 3.15;          // we can not change the value of const variable      Not Allowed
+      // pi = 3.15;                // we can not reassign the value of const variable    Not Allowed
+      //   also we cant redeclaire const variable  reassign and redeclaire both are not    allowed
+    </script>
+  </body>
+</html>

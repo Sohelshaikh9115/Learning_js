@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types of js</title>
+  </head>
+  <body>
+    <!-- Inline JS Example: -->
+    <button onclick="alert('This is inline JS')">Inline Click</button>
+    <!-- 2nd Example -->
+    <button onclick="alert('Thanks For Clicking')">Click Me</button>
+    <!-- Internal js Example: -->
+    <button onclick="ShowMsg1()">Internal JS</button>
+    <script>
+      function ShowMsg1() {
+        alert("This is Internal JS");
+      }
+    </script>
+<!-- 2nd Example -->
+ <button onclick="read()">Click To read</button>
+ <script>
+    function read(){
+        alert("Reading a book is a good habit");
+    }
+ </script>
+    <!-- external js Example: -->
+    <button onclick="ShowMsg2()">External JS</button>
+    <script src="external.js" type="text/javascript"></script>
+  </body>
+</html>
