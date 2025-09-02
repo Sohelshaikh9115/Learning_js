@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operators</title>
+  </head>
+  <body>
+    <!-- arithmetic operators  =, - , ++ , --  , /  , * , %  ,**  -->
+    <script>
+      var a = 10;
+      var b = 3;
+      var c = a + b;
+      c++; //it will increase by one
+      c--; //it will decrease by one
+      c++;
+      c++;
+      c++;
+      c--; //15
+      document.write(c); // answer is 15
+    </script>
+    <!-- asiignment operator =, += , -= ,  -->
+
+    <script>
+      var x = 10;
+      var y = 3;
+      x += y;
+      document.write(x);
+    </script>
+
+    <!-- comparison operator != , <= , >= , == , === -->
+    <script>
+      var a = 13;
+      var b = "13";
+    //   it will compare the value only
+      if (a == b) {
+        document.write("true <br>");
+      } else {
+        document.write("false <br>");
+      }
+//   it will compare the value and data type
+      var a = 13;
+      var b = "13";
+      if (a === b) {
+        document.write("true <br>");
+      } else {
+        document.write("false <br>");
+      }
+    </script>
+<!-- logical operator &&(and) ||(OR)  -->
+    <script>
+var age=18;
+if (a>18 && age<=100) {
+    document.write('eligibl for code');
+} else {
+    document.write('Not eligibl for code');
+}
+
+var day="sunday";
+if (day==="Sunday" || day==="Saturday") {
+    document.write('Weekend');
+} else {
+    document.write('Wekdays');
+}
+
+// ternary operators
+var age=12;
+var eligible = (age>=18) ? "Eligible" : "Not Eligible" ; //like if else
+document.write(eligible);
+    </script>
+  </body>
+</html>

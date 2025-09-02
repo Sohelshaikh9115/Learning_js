@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var month = prompt("Enter The Month");
+      month = parseInt(month);
+
+       //   log code
+      if (month == 1) {
+        document.write("January Month Days Is 31");
+      } else if (month == 2) {
+        document.write("Feb Month Days Is 28 ");
+      } else if (month == 3) {
+        document.write("mar Month Days Is 31 ");
+      } else if (month == 4) {
+        document.write("apr Month Days Is 30 ");
+      } else if (month == 5) {
+        document.write("May Month Days Is 31 ");
+      } else if (month == 6) {
+        document.write("Jun Month Days Is 30 ");
+      } else if (month == 7) {
+        document.write("Jul Month Days Is 31 ");
+      } else if (month == 8) {
+        document.write("Aug Month Days Is 30 ");
+      } else if (month == 9) {
+        document.write("Sep Month Days Is 31 ");
+      } else if (month == 10) {
+        document.write(" Aug Month Days Is 31 ");
+      } else if (month == 11) {
+        document.write("Nov Month Days Is 30 ");
+      } else if (month == 12) {
+        document.write("Dec Month Days Is 31 ");
+      }else{
+        document.write('Invalid Month');
+      }
+
+//    less code logic
+if(month===4 || month===6 || month===8 || month===11 ){
+    document.write("The Days Of Month is 30");
+}else if(month===1 || month===3 ||month===5 ||month===7 ||month===9 ||month===10 ||month===12){
+    document.write("The Days Of Month is 31");
+}else {
+    document.write("Invalid Month");
+}
+
+    </script>
+  </body>
+</html>
