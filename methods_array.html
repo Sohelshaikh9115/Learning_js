@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <script>
+      // update and delete
+      var a = ["Sohel", "Shaikh", "vaibhav", "Shinde"];
+      document.write(a, "<br>");
+      a[2] = "update";
+      document.write(a, "<br>");
+      delete a[3];
+      document.write(a, "<br>");
+    </script>
+    <!-- sorting and reversing-->
+    <script>
+      var a = ["banana", "grapes", "apple"];
+      a.sort();
+      document.write(a, "<br>");
+      a.reverse();
+      document.write(a, "<br>");
+    </script>
+    <!-- pull and pop -->
+    <script>
+      // last avlue will de delete and change
+      var a = ["Sohel", "Vaibhav", "Ganesh", "Shree", "raju", "Suyog"];
+      document.write(a, "<br>");
+      a.pop();
+      a.pop();
+      document.write(a, "<br>");
+      a.push("New push");
+      a.push("new 2");
+      document.write(a, "<br>");
+    </script>
+
+    <script>
+      // first value weill be change and delete
+      var a = ["Sohel", "Vaibhav", "Ganesh", "Shree", "raju", "Suyog"];
+      document.write(a, "<br>");
+      a.shift();
+      a.shift();
+      document.write(a, "<br>");
+      a.unshift("New Name");
+      a.unshift("new 2");
+      document.write(a, "<br>");
+    </script>
+<!-- we use concat for joining array a to b like this -->
+    <script>
+        var a = ["Sohel", "Vaibhav", "Ganesh", "Shree", "raju", "Suyog"];
+        var b = ["Sohel", "Vaibhav", "Ganesh", "Shree", "raju", "Suyog"];
+        var c = ["Sohel", "Vaibhav", "Ganesh", "Shree", "raju", "Suyog"];
+        var d=a.concat(b,c); //this will joint array to each othe
+        document.write(d +"<br>");
+        var j=d.join("/");
+        document.write(j + "<br>");
+    </script>
+  </body>
+</html>

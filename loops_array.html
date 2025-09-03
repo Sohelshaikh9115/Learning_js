@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loops array</title>
+  </head>
+  <body>
+    <script>
+      var a = ["Sohel", 28, true, "Shaikh"];
+      document.write("<br>", a);
+    </script>
+
+    <script>
+      var array = [10, 20, 30, 40, 50, 60];
+      //          for loop
+      var sumfor = 0;
+      document.write("<h2>Using For Loop</h2> <ul>");
+      for (var i = 0; i < array.length; i++) {
+        document.write("<li>" + array[i] + "</li>");
+        sumfor += array[i];
+      }
+      document.write("</ul>");
+      document.write("Total Sum Of An Array is" + sumfor);
+
+// do while loop
+
+var i=0;
+document.write("<h3>This is Do While Loop</h3>");
+      do {
+        // document.write("<ul>");
+        document.write("<ul> <li>" + array[i] + "</li></ul>");
+        i++;
+        
+      } while (i < array.length);
+      document.write("Total Sum Of An Array is" + sumfor);
+
+// while loop
+      var j=0;
+      document.write("<h2> This Is While Loop</h2>")
+      while(j<array.length){
+        document.write("<li>" + array[j] + "</li></ul>");
+        j++;
+      }
+document.write("Total Sum Of An Array is" + sumfor);
+    </script>
+  </body>
+</html>

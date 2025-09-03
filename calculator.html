@@ -22,7 +22,7 @@
         font-weight: 350;
         font-style: normal;
         margin-top: 20px;
-        color:rgb(37 62 157);
+        color: rgb(37 62 157);
       }
       .form-border {
         border: 4px solid grey;
@@ -33,41 +33,75 @@
   </head>
   <body>
     <h1 class="heading text-center">Simple Calculator</h1>
-    <form class="form-border p-4">
+    <form name="myform" class="form-border p-4">
       <div class="mb-3">
-        <label for="number1" class="form-label">1st Number</label>
+        <label for="n1" class="form-label">1st Number</label>
         <input
           type="number"
           class="form-control"
-          id="number1"
+          id="n1"
           placeholder="Enter first number"
           required
         />
       </div>
 
       <div class="mb-3">
-        <label for="number2" class="form-label">2nd Number</label>
+        <label for="n2" class="form-label">2nd Number</label>
         <input
           type="number"
           class="form-control"
-          id="number2"
+          id="n2"
           placeholder="Enter second number"
           required
         />
       </div>
 
-      <div class="mb-3">
-        <label for="result" class="form-label">Result</label>
-        <input type="text" class="form-control" id="result" />
-      </div>
-
       <div class="d-flex justify-content-between">
-        <button type="button" class="btn btn-primary">+</button>
-        <button type="button" class="btn btn-primary">-</button>
-        <button type="button" class="btn btn-primary">*</button>
-        <button type="button" class="btn btn-primary">/</button>
+        <button type="button" class="btn btn-danger" onclick="add()">+</button>
+        <button type="button" class="btn btn-primary" onclick="sub()">-</button>
+        <button type="button" class="btn btn-primary" onclick="mul()">*</button>
+        <button type="button" class="btn btn-primary" onclick="div()">/</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+      <div class="mb-3">
+        <label for="res" class="form-label">Result</label>
+        <input
+          type="number"
+          name="res"
+          class="form-control"
+          id="result"
+          disabled
+        />
       </div>
     </form>
+
+    <script>
+      var a, b, result;
+      function add() {
+        a = Number(document.myform.n1.value);
+        b = Number(document.myform.n2.value);
+        result = a + b;
+        document.myform.res.value = result.toFixed(4); //to fixed(4 this 4 will add zero in result)
+      }
+      function sub() {
+        a = Number(document.myform.n1.value);
+        b = Number(document.myform.n2.value);
+        result = a - b;
+        document.myform.res.value = result.toFixed(4);
+      }
+      function mul() {
+        a = Number(document.myform.n1.value);
+        b = Number(document.myform.n2.value);
+        result = a * b;
+        document.myform.res.value = result.toFixed(4);
+      }
+      function div() {
+        a = Number(document.myform.n1.value);
+        b = Number(document.myform.n2.value);
+        result = a / b;
+        document.myform.res.value = result.toFixed(4);
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
