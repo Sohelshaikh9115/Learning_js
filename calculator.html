@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Simple Calculator</title>
+    <style>
+      .heading {
+        font-family: "Chango", sans-serif;
+        font-weight: 350;
+        font-style: normal;
+        margin-top: 20px;
+        color:rgb(37 62 157);
+      }
+      .form-border {
+        border: 4px solid grey;
+        max-width: 400px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading text-center">Simple Calculator</h1>
+    <form class="form-border p-4">
+      <div class="mb-3">
+        <label for="number1" class="form-label">1st Number</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number1"
+          placeholder="Enter first number"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="number2" class="form-label">2nd Number</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number2"
+          placeholder="Enter second number"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="result" class="form-label">Result</label>
+        <input type="text" class="form-control" id="result" />
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-primary">+</button>
+        <button type="button" class="btn btn-primary">-</button>
+        <button type="button" class="btn btn-primary">*</button>
+        <button type="button" class="btn btn-primary">/</button>
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
