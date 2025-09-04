@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <!-- property and value -->
+    <script>
+      var a = {
+        fname: "Sohel",
+        lname: "Shaikh",
+        age: 28,
+        email: "sohelshaikh9115@gmail.com",
+        playes: ["Virat", "Sohel", "Dhoni"], //array in object
+        address: {
+          //object in object
+          city: "Solapur",
+          contry: "India",
+        },
+        phone: "8793989650",
+      };
+      document.write(
+        "Name  : " +
+          a.fname +
+          "<br>Age :" +
+          a.age +
+          "<br>Contact number " +
+          a.phone +
+          "<br> fav Player " +
+          a.playes[1] +
+          "<br>City " +
+          a.address.city
+      );
+    </script>
+    <script>
+      var employee = [
+        { Name: "Sohel", age: "28", salary: "50000" },
+        { Name: "Vaibhav", age: "25", salary: "40000" },
+        { Name: "Ganesh", age: "23", salary: "5000" },
+        { Name: "Santosh", age: "27", salary: "60000" },
+        { Name: "aniket", age: "30", salary: "30000" },
+      ];
+      console.log(employee);
+//       employee.forEach(emp => {
+//   document.write("<br>"+`Name: ${emp.Name}, Age: ${emp.age}, Salary: ${emp.salary}`);
+// }); for simply printing
+for (let a=0; a,employee.length; a++){
+    document.write(employee[a].Name +employee[a].age + employee[a].salary);
+}
+    </script>
+  </body>
+</html>

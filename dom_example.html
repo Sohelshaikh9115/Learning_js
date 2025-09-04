@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="heading">Hello Guys How Are You?</h1>
+    <button onclick="changeText()">Cliking</button>
+    <script>
+      function changeText() {
+        document.getElementById("heading").innerHTML =
+          "Yes We All Are Fine ! <br>";
+      }
+    </script>
+
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda
+      deleniti inventore sapiente error voluptatibus, esse sit deserunt totam
+      ullam.
+    </p>
+    <button onclick="markRed()">Cliking</button>
+    <script>
+        function markRed() {
+            document.getElementById("para").style.color = "red";
+            document.getElementById("para").style.fontSize = "50px";
+            document.getElementById("para").style.background = "blue";
+            document.getElementById("para").style.textShadow="2px 2px 4px black";
+        }
+    </script>
+  </body>
+</html>
